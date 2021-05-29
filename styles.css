@@ -1,0 +1,64 @@
+.container{
+    background-color: rgb(37, 37, 37);
+    width: 83%; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
+    border-bottom: rgba(128, 128, 128, 0.781) 3px solid;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+}
+.display{
+    background-color: rgb(255, 255, 255);
+    font-size: 2rem;
+    height: 9rem;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2rem;
+    word-wrap: break-word;
+	word-break: break-all;
+    overflow: scroll;
+    overflow: hidden;
+}
+.keyboard{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 10vh);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+}
+.character{
+    display: flex;
+    border: rgb(59, 59, 59) 4px solid;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    padding-top: auto;
+    background-color: rgb(90, 90, 90);
+}
+.last-column{
+    grid-column: span 2;
+}
+.character:hover{
+    background-color: rgba(127, 255, 212, 0.5);
+}
+.delete{
+    background-color: rgb(90, 90, 90);
+}
+.delete:hover{
+    background-color: rgba(255, 126, 126, 0.918);
+}
+
+.space{
+    grid-column: 3/10;
+}
+.shift{
+    background-color: rgba(127, 255, 212, 0.5);
+}
